@@ -1,0 +1,82 @@
+html *{
+	box-sizing:border-box;
+}
+html,body{
+	margin:0;
+	padding:0;
+	height:auto;
+}
+.wrapper{
+	width:960px;
+	margin:0 auto;
+}
+.hidden{
+	display:none;
+}
+.force-fixed{
+	position:fixed !important;
+	width:100% !important;
+}
+.persistent-header{
+	position: fixed;
+	top: 0;
+	box-shadow: 0 2px 2px rgba(0,0,0,.2);
+	height: 70px;
+	width: 100%;
+	min-width: 987px;
+	z-index: 10;
+	background: red;
+}
+.persistent-header h1{
+	color:#fafafa;
+}
+.persistent-header .button-container,
+.persistent-header h1{
+	display:inline-block;
+	margin:.313em;
+}
+.main-wrapper{
+	margin-top:70px;
+}
+.content{
+	padding:1em;
+}
+.content p{
+	font-size:1.625em;
+	line-height:1.4;
+}
+.overlay{
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	position: absolute;
+	min-height: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	
+}
+.overlay > .overlay-content{
+background: #fff;
+padding: 30px;
+margin: 5% auto;
+height: auto;
+width: 370px;
+position: relative;
+box-shadow: 0 0 20px 1px rgba(0,0,0,.5);
+border: 1px solid #5c5c5c;
+border-radius: 5px;
+}
+
+.like-button{
+	padding:.625em;
+	background:green;
+	color:white;
+	font-weight:800;
+	font-size:1.313em;
+	border-radius:.313em;
+	text-decoration:none;
+}
+.like-button:hover{
+	text-decoration:underline;
+}
